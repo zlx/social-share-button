@@ -1,7 +1,7 @@
-en:
+zh:
   social_share_button:
-    share_to: Share to
-    weibo: Sina Weibo
+    share_to: 分享到
+    weibo: 新浪微博
     twitter: Twitter
     facebook: Facebook
     googleplus: Google+
@@ -9,4 +9,3 @@ en:
     tumblr: Tumblr
     stumbleupon: Stumbleupon
     vk: VK
-
