@@ -4,7 +4,7 @@ module SocialShareButton
     def social_share_button_tag(opts = {})
       rel = opts[:rel]
       html = []
-      html << "<div class='social-share-button' data-title='#{opts[:title]}' data-url='#{opts[:url]}' style='#{opts[:html][:style]}'>"
+      html << "<div class='social-share-button' data-title='#{opts[:title]}' data-img='#{opts[:img]}' data-url='#{opts[:url]}' style='#{opts[:html][:style]}'>"
 
       sort_sites(opts[:locale]).each do |name|
         link_title = t("social_share_button.share_to") + " " + t("social_share_button.#{name.downcase}")
