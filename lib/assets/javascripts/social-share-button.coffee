@@ -7,6 +7,7 @@ window.SocialShareButton =
     site = $(el).data('site')
     title = encodeURIComponent($(el).parent().data('title'))
     url = encodeURIComponent($(el).parent().data('url'))
+    img = encodeURIComponent($(el).parent().data('img'))
     description = encodeURIComponent($(el).parent().data('description'))
     switch site
       when "weibo"
@@ -18,7 +19,7 @@ window.SocialShareButton =
       when "googleplus"
         SocialShareButton.openUrl("https://plus.google.com/share?url=#{url}&t=#{title}")
       when "pinterest"
-        SocialShareButton.openUrl("http://pinterest.com/pin/create/button/?url=#{url}&description=#{title}")
+        SocialShareButton.openUrl("http://pinterest.com/pin/create/button/?url=#{url}&description=#{title}&media=#{img}")
       when "tumblr"
         SocialShareButton.openUrl("https://www.tumblr.com/login?s=&t=#{title}&u=#{url}&v=3")
       when "stumbleupon"
