@@ -6,7 +6,7 @@ window.SocialShareButton =
   share : (el) ->
     site = $(el).data('site')
     title = encodeURIComponent($(el).parent().data('title'))
-    url = encodeURIComponent($(el).parent().data('url'))
+    url = encodeURIComponent($(el).parent().data('url') + "&ragent=" + site)
     img = encodeURIComponent($(el).parent().data('img'))
     description = encodeURIComponent($(el).parent().data('description'))
     switch site
